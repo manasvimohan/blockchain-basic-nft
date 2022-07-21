@@ -1,6 +1,6 @@
 # Installation
-yarn init
-yarn add --dev ethers dotenv solc @openzeppelin/contracts fs-extra
+* yarn init
+* yarn add --dev ethers dotenv solc @openzeppelin/contracts fs-extra
 
 # Workflow
 1. Create solidity file. [BasicNft.sol](BasicNft.sol)
@@ -11,10 +11,10 @@ yarn add --dev ethers dotenv solc @openzeppelin/contracts fs-extra
 yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o ./artifacts/ BasicNft.sol
 ```
 
-1. Update the following in the .env file:
+4. Update the following in the .env file:
     1. Private Key of wallet from which deployment will be done.
     2. Infura or Alchemy node RPC. Get free api from their respective website.
-2. Deploy using the script by running
+5. Deploy using the script by running
 
 ```bash
 node ./deploy.js
