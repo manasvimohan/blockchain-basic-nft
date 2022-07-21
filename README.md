@@ -13,7 +13,7 @@ yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o ./artifact
 
 4. Update the following in the .env file:
     1. Private Key of wallet from which deployment will be done.
-    2. Infura or Alchemy node RPC. Get free api from their respective website.
+    2. Alchemy node RPC. Get it from https://alchemy.com/?r=Dk4NTc0NjA4MzUyM
 5. Deploy using the script by running
 
 ```bash
