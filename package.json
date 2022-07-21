@@ -1,0 +1,19 @@
+{
+  "name": "blockchain-basic-nft",
+  "version": "1.0.0",
+  "description": "Most basic form of NFT I can think of.",
+  "main": "index.js",
+  "repository": "git@github.com:manasvimohan/blockchain-basic-nft.git",
+  "author": "Manasvi <manasvimsharma@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o ./artifacts/ BasicNft.sol"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.7.1",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.9",
+    "fs-extra": "^10.1.0",
+    "solc": "^0.8.15"
+  }
+}

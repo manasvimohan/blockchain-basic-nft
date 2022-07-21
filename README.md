@@ -1,24 +1,21 @@
-# Project Name
+# Installation
+yarn init
+yarn add --dev ethers dotenv solc @openzeppelin/contracts fs-extra
 
-# Tags
+# Workflow
+1. Create solidity file. [BasicNft.sol](BasicNft.sol)
+2. Create deployment file. [deploy.js](deploy.js)
+3. Compile the solidity file
 
-# Links
-Youtube:
+```bash
+yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o ./artifacts/ BasicNft.sol
+```
 
-Github:
+1. Update the following in the .env file:
+    1. Private Key of wallet from which deployment will be done.
+    2. Infura or Alchemy node RPC. Get free api from their respective website.
+2. Deploy using the script by running
 
-Other:
-
-
-# Objective
-
-# Overview
-
-# Details
-
-# Author Details
-**Name**: Manasvi Mohan Sharma
-**Website**: <https://www.manasvi.co.in>
-**Mobile**: +91-9899447040, +91-8181010179
-**Email**: <manasvimsharma@gmail.com>
-**LinkedIn**: <https://www.linkedin.com/in/manasvi-m/>
+```bash
+node ./deploy.js
+```
